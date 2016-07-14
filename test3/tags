@@ -1,0 +1,302 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASM	Makefile	/^ASM = nasm$/;"	m
+ASM_FLAGS	Makefile	/^ASM_FLAGS = -f elf -g -F stabs  $/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+C_FLAGS	Makefile	/^C_FLAGS = -std=c99 -c -m32 -Wall -Wextra -ggdb -gstabs+ -ffreestanding \\$/;"	m
+C_OBJECTS	Makefile	/^C_OBJECTS = $(patsubst %.c, %.o, $(C_SOURCES))$/;"	m
+C_SOURCES	Makefile	/^C_SOURCES = $(shell find . -name "*.c")$/;"	m
+DEBUG_H	include/debug.h	20;"	d
+Disassembly	test.S	/^Disassembly of section .text:$/;"	l
+ELF32_ST_TYPE	include/elf.h	24;"	d
+ELF_H	include/elf.h	19;"	d
+Elf32_Ehdr	include/elf.h	/^}__attribute__((packed)) Elf32_Ehdr;$/;"	t	typeref:struct:__anon3
+Elf32_Shar	include/elf.h	/^}__attribute__((packed)) Elf32_Shar;$/;"	t	typeref:struct:__anon4
+Elf32_Sym	include/elf.h	/^}__attribute__((packed)) Elf32_Sym;$/;"	t	typeref:struct:__anon5
+FALSE	include/types.h	28;"	d
+GDT_H	include/gdt.h	20;"	d
+GDT_LENGTH	gdt/gdt.c	23;"	d	file:
+IDT_H	include/idt.h	20;"	d
+INCLUDE_SCREEN_PORT_H	include/screen_port.h	20;"	d
+IRQ	idt/idt_s.s	/^IRQ   0, 32 $/;"	l
+IRQ	idt/idt_s.s	/^IRQ   1, 33$/;"	l
+IRQ	idt/idt_s.s	/^IRQ   2, 34$/;"	l
+IRQ	idt/idt_s.s	/^IRQ   3, 35$/;"	l
+IRQ	idt/idt_s.s	/^IRQ   4, 36$/;"	l
+IRQ	idt/idt_s.s	/^IRQ   5, 37$/;"	l
+IRQ	idt/idt_s.s	/^IRQ   6, 38$/;"	l
+IRQ	idt/idt_s.s	/^IRQ   7, 39$/;"	l
+IRQ	idt/idt_s.s	/^IRQ   8, 40$/;"	l
+IRQ	idt/idt_s.s	/^IRQ   9, 41$/;"	l
+IRQ	idt/idt_s.s	/^IRQ  10, 42$/;"	l
+IRQ	idt/idt_s.s	/^IRQ  11, 43$/;"	l
+IRQ	idt/idt_s.s	/^IRQ  12, 44$/;"	l
+IRQ	idt/idt_s.s	/^IRQ  13, 45$/;"	l
+IRQ	idt/idt_s.s	/^IRQ  14, 46$/;"	l
+IRQ	idt/idt_s.s	/^IRQ  15, 47$/;"	l
+IRQ0	include/idt.h	144;"	d
+IRQ1	include/idt.h	145;"	d
+IRQ10	include/idt.h	154;"	d
+IRQ11	include/idt.h	155;"	d
+IRQ12	include/idt.h	156;"	d
+IRQ13	include/idt.h	157;"	d
+IRQ14	include/idt.h	158;"	d
+IRQ15	include/idt.h	159;"	d
+IRQ2	include/idt.h	146;"	d
+IRQ3	include/idt.h	147;"	d
+IRQ4	include/idt.h	148;"	d
+IRQ5	include/idt.h	149;"	d
+IRQ6	include/idt.h	150;"	d
+IRQ7	include/idt.h	151;"	d
+IRQ8	include/idt.h	152;"	d
+IRQ9	include/idt.h	153;"	d
+ISR_ERRCODE	idt/idt_s.s	/^ISR_ERRCODE    8 	; 8 #DF 双重故障(有错误代码) $/;"	l
+ISR_ERRCODE	idt/idt_s.s	/^ISR_ERRCODE   10 	; 10 #TS 无效TSS(有错误代码) $/;"	l
+ISR_ERRCODE	idt/idt_s.s	/^ISR_ERRCODE   11 	; 11 #NP 段不存在(有错误代码) $/;"	l
+ISR_ERRCODE	idt/idt_s.s	/^ISR_ERRCODE   12 	; 12 #SS 栈错误(有错误代码) $/;"	l
+ISR_ERRCODE	idt/idt_s.s	/^ISR_ERRCODE   13 	; 13 #GP 常规保护(有错误代码) $/;"	l
+ISR_ERRCODE	idt/idt_s.s	/^ISR_ERRCODE   14 	; 14 #PF 页故障(有错误代码) $/;"	l
+ISR_ERRCODE	idt/idt_s.s	/^ISR_ERRCODE   17 	; 17 #AC 对齐检查 $/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE  0 	; 0 #DE 除 0 异常$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE  1 	; 1 #DB 调试异常$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE  2 	; 2 NMI$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE  3 	; 3 BP 断点异常 $/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE  4 	; 4 #OF 溢出 $/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE  5 	; 5 #BR 对数组的引用超出边界 $/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE  6 	; 6 #UD 无效或未定义的操作码 $/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE  7 	; 7 #NM 设备不可用(无数学协处理器) $/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE  9 	; 9 协处理器跨段操作$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 15 	; 15 CPU 保留 $/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 16 	; 16 #MF 浮点处理单元错误 $/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 18 	; 18 #MC 机器检查 $/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 19 	; 19 #XM SIMD(单指令多数据)浮点异常$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 20$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 21$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 22$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 23$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 24$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 25$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 255$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 26$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 27$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 28$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 29$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 30$/;"	l
+ISR_NOERRCODE	idt/idt_s.s	/^ISR_NOERRCODE 31$/;"	l
+LD	Makefile	/^LD = ld$/;"	m
+LD_FLAGS	Makefile	/^LD_FLAGS = -T scripts\/kernel.lds -nostdlib  -m elf_i386$/;"	m
+MBOOT_CHECKSUM	boot/init_s.s	/^MBOOT_CHECKSUM        equ  - (MBOOT_HEADER_MAGIC + MBOOT_HEADER_FLAGS )$/;"	d
+MBOOT_HEADER_FLAGS	boot/init_s.s	/^MBOOT_HEADER_FLAGS    equ  MBOOT_PAGE_ALIGN  | MBOOT_MEM_INFO$/;"	d
+MBOOT_HEADER_MAGIC	boot/init_s.s	/^MBOOT_HEADER_MAGIC    equ  0x1BADB002$/;"	d
+MBOOT_MEM_INFO	boot/init_s.s	/^MBOOT_MEM_INFO        equ  1 << 1$/;"	d
+MBOOT_PAGE_ALIGN	boot/init_s.s	/^MBOOT_PAGE_ALIGN    equ  1 << 0 $/;"	d
+MULTIBOOT_H	include/multiboot.h	20;"	d
+NULL	include/types.h	23;"	d
+PANIC_H	include/panic.h	20;"	d
+SCREEN_OPERATE_H	include/screen_operate.h	20;"	d
+STACK_TOP	boot/init_s.s	/^STACK_TOP equ $-stack-1$/;"	d
+STRING_H	include/string.h	2;"	d
+S_OBJECTS	Makefile	/^S_OBJECTS = $(patsubst %.s, %.o, $(S_SOURCES))$/;"	m
+S_SOURCES	Makefile	/^S_SOURCES = $(shell find . -name "*.s")$/;"	m
+TRUE	include/types.h	27;"	d
+TYPES_H	include/types.h	20;"	d
+_TIMER_H	include/timer.h	9;"	d
+access	include/gdt.h	/^	uint8 access; 		\/\/段的类型域，标志域，p，s标志          $/;"	m	struct:gdt_t
+addr	include/multiboot.h	/^	uint32 addr;$/;"	m	struct:mulitboot_t
+apm_table	include/multiboot.h	/^	uint32 apm_table;$/;"	m	struct:mulitboot_t
+assert	include/panic.h	26;"	d
+base	include/gdt.h	/^	uint32 base;$/;"	m	struct:gdt_ptr_t
+base	include/idt.h	/^	uint32 	base; 		\/\/基础地址$/;"	m	struct:idt_ptr_t
+base_addr_high	include/multiboot.h	/^	uint32 base_addr_high;$/;"	m	struct:__anon1
+base_addr_low	include/multiboot.h	/^	uint32 base_addr_low;$/;"	m	struct:__anon1
+base_high	include/gdt.h	/^	uint8 base_high; 	\/\/段的基地址 24-31$/;"	m	struct:gdt_t
+base_high	include/idt.h	/^	uint16 	base_high; 	\/\/偏移的高地址，16-31$/;"	m	struct:idt_t
+base_low	include/gdt.h	/^	uint16 base_low; 	\/\/段的基地址0-15$/;"	m	struct:gdt_t
+base_low	include/idt.h	/^	uint16 	base_low;  	\/\/低16位是偏移的低地址，0-15	$/;"	m	struct:idt_t
+base_middle	include/gdt.h	/^	uint8 base_middle; 	\/\/段的基地址16-23$/;"	m	struct:gdt_t
+boot_device	include/multiboot.h	/^	uint32 boot_device;$/;"	m	struct:mulitboot_t
+boot_loader_name	include/multiboot.h	/^	uint32 boot_loader_name;$/;"	m	struct:mulitboot_t
+bzer	libs/string.c	/^void bzer(void *dest, uint32 len)$/;"	f
+cmdline	include/multiboot.h	/^	uint32 cmdline;$/;"	m	struct:mulitboot_t
+color	include/screen_operate.h	/^}color;$/;"	t	typeref:enum:__anon2
+config_tables	include/multiboot.h	/^	uint32 config_tables;$/;"	m	struct:mulitboot_t
+cs	include/idt.h	/^	uint32 cs;$/;"	m	struct:pt_regs_t
+dd	boot/init_s.s	/^dd MBOOT_CHECKSUM $/;"	l
+dd	boot/init_s.s	/^dd MBOOT_HEADER_FLAGS $/;"	l
+dd	boot/init_s.s	/^dd MBOOT_HEADER_MAGIC $/;"	l
+drives_length	include/multiboot.h	/^	uint32 drives_length;$/;"	m	struct:mulitboot_t
+ds	include/idt.h	/^	uint32 ds;$/;"	m	struct:pt_regs_t
+e_ehsize	include/elf.h	/^	uint16 e_ehsize;$/;"	m	struct:__anon3
+e_entry	include/elf.h	/^	uint32 e_entry;$/;"	m	struct:__anon3
+e_flags	include/elf.h	/^	uint32 e_flags;$/;"	m	struct:__anon3
+e_ident	include/elf.h	/^	uint8 e_ident[16];$/;"	m	struct:__anon3
+e_machine	include/elf.h	/^	uint16 e_machine;$/;"	m	struct:__anon3
+e_phentsize	include/elf.h	/^	uint16 e_phentsize;$/;"	m	struct:__anon3
+e_phnum	include/elf.h	/^	uint16 e_phnum;$/;"	m	struct:__anon3
+e_phoff	include/elf.h	/^	uint32 e_phoff;$/;"	m	struct:__anon3
+e_shentsize	include/elf.h	/^	uint16 e_shentsize;$/;"	m	struct:__anon3
+e_shnum	include/elf.h	/^	uint16 e_shnum;$/;"	m	struct:__anon3
+e_shoff	include/elf.h	/^	uint32 e_shoff;$/;"	m	struct:__anon3
+e_shstrndx	include/elf.h	/^	uint16 e_shstrndx;$/;"	m	struct:__anon3
+e_type	include/elf.h	/^	uint16 e_type;$/;"	m	struct:__anon3
+e_version	include/elf.h	/^	uint32 e_version;$/;"	m	struct:__anon3
+eax	include/idt.h	/^	uint32 eax;$/;"	m	struct:pt_regs_t
+ebp	include/idt.h	/^	uint32 ebp;$/;"	m	struct:pt_regs_t
+ebx	include/idt.h	/^	uint32 ebx;$/;"	m	struct:pt_regs_t
+ecx	include/idt.h	/^	uint32 ecx;$/;"	m	struct:pt_regs_t
+edi	include/idt.h	/^	uint32 edi;$/;"	m	struct:pt_regs_t
+eflags	include/idt.h	/^	uint32 eflags;$/;"	m	struct:pt_regs_t
+eip	include/idt.h	/^	uint32 eip;             \/\/下面的寄存器是由cpu自动压入到栈中的$/;"	m	struct:pt_regs_t
+elf	include/elf.h	/^typedef struct elf{$/;"	s
+elf_form_multiboot	elf/elf.c	/^elf_t elf_form_multiboot(multiboot_t *mb)$/;"	f
+elf_look_symbol	elf/elf.c	/^const char *elf_look_symbol(uint32 addr, elf_t *elf)$/;"	f
+elf_t	include/elf.h	/^}elf_t;$/;"	t	typeref:struct:elf
+err_code	include/idt.h	/^	uint32 err_code; 	\/\/错误代码$/;"	m	struct:pt_regs_t
+esi	include/idt.h	/^	uint32 esi;$/;"	m	struct:pt_regs_t
+esp	include/idt.h	/^	uint32 esp;$/;"	m	struct:pt_regs_t
+flag	include/idt.h	/^	uint8 	flag; 		\/\/设置各种标示$/;"	m	struct:idt_t
+flags	include/multiboot.h	/^	uint32 flags;$/;"	m	struct:mulitboot_t
+gdt_entries	gdt/gdt.c	/^gdt_entry_t gdt_entries[GDT_LENGTH];$/;"	v
+gdt_entry_t	include/gdt.h	/^}__attribute__((packed)) gdt_entry_t;$/;"	t	typeref:struct:gdt_t
+gdt_flush	gdt/gdt_s.s	/^gdt_flush :$/;"	l
+gdt_ptr	gdt/gdt.c	/^gdt_ptr_t  gdt_ptr;$/;"	v
+gdt_ptr_t	include/gdt.h	/^typedef struct gdt_ptr_t{$/;"	s
+gdt_ptr_t	include/gdt.h	/^}__attribute__((packed)) gdt_ptr_t;$/;"	t	typeref:struct:gdt_ptr_t
+gdt_set_gate	gdt/gdt.c	/^static void gdt_set_gate(int32 num, uint32 base, uint32 limit, uint8 access, uint8 gran)$/;"	f	file:
+gdt_t	include/gdt.h	/^typedef struct  gdt_t{$/;"	s
+granularity	include/gdt.h	/^	uint8 granularity; 	\/\/段的界限，其他的标志$/;"	m	struct:gdt_t
+idt_entries	idt/idt.c	/^idt_t idt_entries[256];$/;"	v
+idt_flush	idt/idt_s.s	/^idt_flush:$/;"	l
+idt_ptr	idt/idt.c	/^idt_ptr_t idt_ptr;$/;"	v
+idt_ptr_t	include/idt.h	/^typedef struct idt_ptr_t{$/;"	s
+idt_ptr_t	include/idt.h	/^}__attribute__((packed)) idt_ptr_t;$/;"	t	typeref:struct:idt_ptr_t
+idt_set_gate	idt/idt.c	/^static void idt_set_gate(uint8 num, uint32 base, uint16 sel, uint8 flags)$/;"	f	file:
+idt_t	include/idt.h	/^typedef struct idt_t{$/;"	s
+idt_t	include/idt.h	/^}__attribute__((packed)) idt_t;$/;"	t	typeref:struct:idt_t
+inb	libs/screen_port.c	/^inline uint8 inb(uint16 port)$/;"	f
+init_debug	kernel/panic.c	/^void init_debug()$/;"	f
+init_gdt	gdt/gdt.c	/^void init_gdt()$/;"	f
+init_idt	idt/idt.c	/^void init_idt()$/;"	f
+init_timer	divers/timer.c	/^void init_timer(uint32 frequency){$/;"	f
+int16	include/types.h	/^typedef 	 short  int16;$/;"	t
+int32	include/types.h	/^typedef 	 int    int32;$/;"	t
+int8	include/types.h	/^typedef 	 char  	int8;$/;"	t
+int_no	include/idt.h	/^	uint32 int_no; 		\/\/中断号$/;"	m	struct:pt_regs_t
+interrupt_handler_t	include/idt.h	/^typedef void (*interrupt_handler_t) (pt_regs_t *);$/;"	t
+interrupt_handlers	idt/idt.c	/^interrupt_handler_t interrupt_handlers[256];$/;"	v
+inw	libs/screen_port.c	/^inline uint16 inw(uint16 port)$/;"	f
+irq_common_stub	idt/idt_s.s	/^irq_common_stub:$/;"	l
+irq_handler	idt/idt.c	/^void irq_handler(pt_regs_t *regs){$/;"	f
+isr_common_stub	idt/idt_s.s	/^isr_common_stub:$/;"	l
+isr_handler	idt/idt.c	/^void isr_handler(pt_regs_t *regs)$/;"	f
+kern_entry	init/entry.c	/^int kern_entry(){$/;"	f
+kernel_elf	kernel/panic.c	/^static elf_t kernel_elf;$/;"	v	file:
+length_high	include/multiboot.h	/^	uint32 length_high;$/;"	m	struct:__anon1
+length_low	include/multiboot.h	/^	uint32 length_low;$/;"	m	struct:__anon1
+limit	include/gdt.h	/^	uint16 limit;$/;"	m	struct:gdt_ptr_t
+limit	include/idt.h	/^	uint16 	limit; 		\/\/长度$/;"	m	struct:idt_ptr_t
+limit_low	include/gdt.h	/^	uint16 limit_low; 	\/\/段的界限  0-15$/;"	m	struct:gdt_t
+mem_lower	include/multiboot.h	/^	uint32 mem_lower;$/;"	m	struct:mulitboot_t
+mem_upper	include/multiboot.h	/^	uint32 mem_upper;$/;"	m	struct:mulitboot_t
+memcpy	libs/string.c	/^void *memcpy(void * dest, const void  * src, uint32 len)$/;"	f
+memset	libs/string.c	/^void memset(void * dest, int8 val, uint32 len)$/;"	f
+mmap_addr	include/multiboot.h	/^	uint32 mmap_addr;$/;"	m	struct:mulitboot_t
+mmap_entry_t	include/multiboot.h	/^}__attribute__((packed)) mmap_entry_t;$/;"	t	typeref:struct:__anon1
+mmap_length	include/multiboot.h	/^	uint32 mmap_length;$/;"	m	struct:mulitboot_t
+mods_addr	include/multiboot.h	/^	uint32 mods_addr;$/;"	m	struct:mulitboot_t
+mods_count	include/multiboot.h	/^	uint32 mods_count;$/;"	m	struct:mulitboot_t
+move_point	libs/screen_operate.c	/^static void move_point()$/;"	f	file:
+mulitboot_t	include/multiboot.h	/^typedef struct mulitboot_t {$/;"	s
+multiboot_t	include/multiboot.h	/^}__attribute__((packed)) multiboot_t;$/;"	t	typeref:struct:mulitboot_t
+must_0	include/idt.h	/^	uint8 	must_0; 	\/\/这一个字节内一直为0$/;"	m	struct:idt_t
+noreturn	boot/init_s.s	/^noreturn:$/;"	l
+num	include/multiboot.h	/^	uint32 num;$/;"	m	struct:mulitboot_t
+outb	libs/screen_port.c	/^inline  void outb(uint16 port, uint8 value)$/;"	f
+panic	kernel/panic.c	/^void panic(const char *msg) $/;"	f
+print_cur_status	kernel/panic.c	/^void print_cur_status()$/;"	f
+print_stack_trace	kernel/panic.c	/^void print_stack_trace()$/;"	f
+printchar	libs/debug.c	/^void printchar(int8 str)$/;"	f
+printi	libs/debug.c	/^void printi(int  number)$/;"	f
+printk	libs/debug.c	/^int printk(const int8 * format, ...)$/;"	f
+prints	libs/debug.c	/^void prints(char *s)$/;"	f
+printx	libs/debug.c	/^void printx(int number)$/;"	f
+pt_regs_t	include/idt.h	/^typedef struct pt_regs_t{$/;"	s
+pt_regs_t	include/idt.h	/^}pt_regs_t;$/;"	t	typeref:struct:pt_regs_t
+registers_interrupt_handler	idt/idt.c	/^void registers_interrupt_handler(uint8 n, interrupt_handler_t h)$/;"	f
+screen_abscissa	libs/screen_operate.c	/^static int16 screen_abscissa = 0;$/;"	v	file:
+screen_black	include/screen_operate.h	/^	screen_black = 0x0, 	 \/\/黑色$/;"	e	enum:__anon2
+screen_blue	include/screen_operate.h	/^	screen_blue  = 0x1,      \/\/蓝色$/;"	e	enum:__anon2
+screen_brown	include/screen_operate.h	/^	screen_brown = 0x6, 	 \/\/棕色$/;"	e	enum:__anon2
+screen_char	libs/screen_operate.c	/^ void screen_char(char c, color back_color, color fore_color )$/;"	f
+screen_clear	libs/screen_operate.c	/^void screen_clear()$/;"	f
+screen_cyan	include/screen_operate.h	/^	screen_cyan  = 0x3, 	 \/\/青色$/;"	e	enum:__anon2
+screen_gray	include/screen_operate.h	/^	screen_gray  = 0x8,  	 \/\/灰色$/;"	e	enum:__anon2
+screen_green	include/screen_operate.h	/^	screen_green = 0x2,      \/\/绿色$/;"	e	enum:__anon2
+screen_lblue	include/screen_operate.h	/^	screen_lblue = 0x9, 	 \/\/浅蓝$/;"	e	enum:__anon2
+screen_lbrown	include/screen_operate.h	/^	screen_lbrown= 0x14, 	 \/\/黄色$/;"	e	enum:__anon2
+screen_lcyan	include/screen_operate.h	/^	screen_lcyan = 0x11, 	 \/\/浅青$/;"	e	enum:__anon2
+screen_lgreen	include/screen_operate.h	/^	screen_lgreen= 0x10, 	 \/\/浅绿$/;"	e	enum:__anon2
+screen_lmngen	include/screen_operate.h	/^	screen_lmngen= 0x13, 	 \/\/浅品红$/;"	e	enum:__anon2
+screen_lred	include/screen_operate.h	/^	screen_lred  = 0x12, 	 \/\/浅红$/;"	e	enum:__anon2
+screen_lwhite	include/screen_operate.h	/^	screen_lwhite= 0x15, 	 \/\/亮白$/;"	e	enum:__anon2
+screen_magen	include/screen_operate.h	/^	screen_magen = 0x5, 	 \/\/品红$/;"	e	enum:__anon2
+screen_ordinate	libs/screen_operate.c	/^static int16 screen_ordinate = 0;$/;"	v	file:
+screen_point	libs/screen_operate.c	/^static  int16 * screen_point = (int16 *)0xb8000;$/;"	v	file:
+screen_red	include/screen_operate.h	/^	screen_red   = 0x4, 	 \/\/红色$/;"	e	enum:__anon2
+screen_string	libs/screen_operate.c	/^void screen_string(int8 *string, color back_color, color fore_color)$/;"	f
+screen_white	include/screen_operate.h	/^	screen_white = 0x7, 	 \/\/白色$/;"	e	enum:__anon2
+section	boot/init_s.s	/^section .data$/;"	l
+section	boot/init_s.s	/^section .text $/;"	l
+segment	include/idt.h	/^	uint16  segment; 	\/\/16-31是段选择子$/;"	m	struct:idt_t
+sh_addr	include/elf.h	/^	uint32 sh_addr;$/;"	m	struct:__anon4
+sh_addralign	include/elf.h	/^	uint32 sh_addralign;$/;"	m	struct:__anon4
+sh_entsize	include/elf.h	/^	uint32 sh_entsize;$/;"	m	struct:__anon4
+sh_flags	include/elf.h	/^	uint32 sh_flags;$/;"	m	struct:__anon4
+sh_info	include/elf.h	/^	uint32 sh_info;$/;"	m	struct:__anon4
+sh_link	include/elf.h	/^	uint32 sh_link;$/;"	m	struct:__anon4
+sh_name	include/elf.h	/^	uint32 sh_name;$/;"	m	struct:__anon4
+sh_offset	include/elf.h	/^	uint32 sh_offset;$/;"	m	struct:__anon4
+sh_size	include/elf.h	/^	uint32 sh_size;$/;"	m	struct:__anon4
+sh_typr	include/elf.h	/^	uint32 sh_typr;$/;"	m	struct:__anon4
+shndx	include/multiboot.h	/^	uint32 shndx;$/;"	m	struct:mulitboot_t
+size	include/multiboot.h	/^	uint32 size;$/;"	m	struct:__anon1
+size	include/multiboot.h	/^	uint32 size;$/;"	m	struct:mulitboot_t
+ss	include/idt.h	/^	uint32 ss;$/;"	m	struct:pt_regs_t
+st_info	include/elf.h	/^	uint8 st_info;$/;"	m	struct:__anon5
+st_name	include/elf.h	/^	uint32 st_name;$/;"	m	struct:__anon5
+st_other	include/elf.h	/^	uint8 st_other;$/;"	m	struct:__anon5
+st_shndx	include/elf.h	/^	uint16 st_shndx;$/;"	m	struct:__anon5
+st_size	include/elf.h	/^	uint32 st_size;$/;"	m	struct:__anon5
+st_value	include/elf.h	/^	uint32 st_value;$/;"	m	struct:__anon5
+stack	boot/init_s.s	/^stack: times 1024 db 0$/;"	l
+start	boot/init_s.s	/^start:$/;"	l
+static_assert	include/panic.h	33;"	d
+strcat	libs/string.c	/^int8  *strcat(int8 *dest, const int8 *val)$/;"	f
+strcmp	libs/string.c	/^int strcmp(const int8 *dest, const int8 *val)$/;"	f
+strcpy	libs/string.c	/^int8 * strcpy(char *dest, const char *val)$/;"	f
+strlen	libs/string.c	/^int strlen(const int8 *src)$/;"	f
+strtab	include/elf.h	/^	const char * strtab;$/;"	m	struct:elf
+strtabsz	include/elf.h	/^	uint32 strtabsz;$/;"	m	struct:elf
+symtab	include/elf.h	/^	Elf32_Sym *symtab;$/;"	m	struct:elf
+symtabsz	include/elf.h	/^	uint32 symtabsz;$/;"	m	struct:elf
+timer_callback	divers/timer.c	/^void timer_callback(pt_regs_t *regs){$/;"	f
+type	include/multiboot.h	/^	uint32 type;$/;"	m	struct:__anon1
+uint16	include/types.h	/^typedef unsigned short  uint16;$/;"	t
+uint32	include/types.h	/^typedef unsigned int    uint32;$/;"	t
+uint8	include/types.h	/^typedef unsigned char 	uint8;$/;"	t
+useresp	include/idt.h	/^	uint32 useresp;$/;"	m	struct:pt_regs_t
+va_arg	include/debug.h	38;"	d
+va_end	include/debug.h	47;"	d
+va_list	include/debug.h	26;"	d
+va_start	include/debug.h	32;"	d
+vbe_control_info	include/multiboot.h	/^	uint32 vbe_control_info;$/;"	m	struct:mulitboot_t
+vbe_interface_len	include/multiboot.h	/^	uint32 vbe_interface_len;$/;"	m	struct:mulitboot_t
+vbe_interface_off	include/multiboot.h	/^	uint32 vbe_interface_off;$/;"	m	struct:mulitboot_t
+vbe_interface_seg	include/multiboot.h	/^	uint32 vbe_interface_seg;$/;"	m	struct:mulitboot_t
+vbe_mode	include/multiboot.h	/^	uint32 vbe_mode;$/;"	m	struct:mulitboot_t
+vbe_mode_info	include/multiboot.h	/^	uint32 vbe_mode_info;$/;"	m	struct:mulitboot_t
+vprintk	libs/debug.c	/^int vprintk(const int8 * format, char * ap)$/;"	f
